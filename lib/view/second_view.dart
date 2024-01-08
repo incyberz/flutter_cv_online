@@ -28,9 +28,9 @@ class SecondView extends StatelessWidget {
             decoration: BoxDecoration(
                 color: theme.cardColor,
                 // color: Colors.red,
-                borderRadius: BorderRadius.circular(20)),
+                borderRadius: BorderRadius.circular(10)),
             child: Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(15),
               child: Column(
                 children: [
                   Text(
@@ -57,9 +57,9 @@ class SecondView extends StatelessWidget {
             decoration: BoxDecoration(
                 color: theme.cardColor,
                 // color: Colors.red,
-                borderRadius: BorderRadius.circular(20)),
+                borderRadius: BorderRadius.circular(10)),
             child: Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(15),
               child: Column(
                 children: [
                   Text(
@@ -95,9 +95,9 @@ class SecondView extends StatelessWidget {
             decoration: BoxDecoration(
                 color: theme.cardColor,
                 // color: Colors.red,
-                borderRadius: BorderRadius.circular(20)),
+                borderRadius: BorderRadius.circular(10)),
             child: Padding(
-              padding: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(15),
               child: Column(
                 children: [
                   Text(

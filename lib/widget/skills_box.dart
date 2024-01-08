@@ -13,7 +13,7 @@ class SkillsBox extends StatelessWidget {
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
     return Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 18,vertical: 8),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
           color: AppColors.appPrimaryColor,

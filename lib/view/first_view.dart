@@ -62,25 +62,28 @@ class FirstView extends StatelessWidget {
         ),
 
         // Developer Skills
-        Wrap(
-          crossAxisAlignment: WrapCrossAlignment.center,
-          alignment: WrapAlignment.center,
-          spacing: size.width * .05,
-          runSpacing: size.width * .03,
-          children: List.generate(
-              DevData.devData.skillsAndProgress.length,
-              // Container Widget extracted to SkillsBox Widget
-              // ==============================================
-              // (index) => Container(
-              //   padding: EdgeInsets.symmetric(horizontal: 10,vertical: 8),
-              //   decoration: BoxDecoration(
-              //     borderRadius: BorderRadius.circular(30),
-              //     color: AppColors.appPrimaryColor,
-              //   ),
-              //   child: Text(DevData.devData.skillsAndProgress[index].name))),
-              (index) => SkillsBox(
-                    title: DevData.devData.skillsAndProgress[index].name,
-                  )),
+        Container(
+          margin: const EdgeInsets.symmetric(vertical: 0,horizontal: 10),
+          child: Wrap(
+            crossAxisAlignment: WrapCrossAlignment.center,
+            alignment: WrapAlignment.center,
+            spacing: size.width * .05,
+            runSpacing: size.width * .03,
+            children: List.generate(
+                DevData.devData.skillsAndProgress.length,
+                // Container Widget extracted to SkillsBox Widget
+                // ==============================================
+                // (index) => Container(
+                //   padding: EdgeInsets.symmetric(horizontal: 10,vertical: 8),
+                //   decoration: BoxDecoration(
+                //     borderRadius: BorderRadius.circular(30),
+                //     color: AppColors.appPrimaryColor,
+                //   ),
+                //   child: Text(DevData.devData.skillsAndProgress[index].name))),
+                (index) => SkillsBox(
+                      title: DevData.devData.skillsAndProgress[index].name,
+                    )),
+          ),
         ),
 
         // empty space
